@@ -5,7 +5,7 @@
 int xa=1;
 int ya=1;
 int xb=1;
-int yb=20, yc=20, xc=80;
+int yb=40, yc=40, xc=80;
 
 Console.SetCursorPosition(xa,ya);
 Console.WriteLine("+");
@@ -24,17 +24,17 @@ while(count<1000)
 
 {
     int what = new Random().Next(0, 3);
-    if (what == 0);
+    if (what == 0)
     {
         x=(x+xa)/2;
         y=(y+ya)/2;
     }
-    if (what == 1);
+    if (what == 1)
     {
         x=(x+xb)/2;
         y=(y+yb)/2;
     }
-    if (what == 2);
+    if (what == 2)
     {
         x=(x+xc)/2;
         y=(y+yc)/2;
