@@ -24,3 +24,38 @@ else
 
 Console.WriteLine($"More  number is {max}, smallest number is {min}");
 */
+
+
+//Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих
+
+
+ Console.WriteLine("Input first number:  ");
+int firstnum = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Input second number:  ");
+int secondnum = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Input third number:  ");
+int thirdnum = Convert.ToInt32(Console.ReadLine());
+
+int max;
+
+    if (firstnum>secondnum && firstnum> thirdnum)
+    {
+        max=firstnum;
+    }
+    else if(secondnum> thirdnum && secondnum>firstnum)
+    {
+        max=secondnum;
+    }
+    else 
+    {
+        max=thirdnum;
+    }
+
+
+Console.WriteLine($"More  number is {max}.");
+   
+
+
+
