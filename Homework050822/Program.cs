@@ -82,7 +82,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 int even=2;
 
 Console.Write ("All even number in line: ");
-while(even<=num && even>=2)
+while(even<=num)
 {
     Console.Write(even + " ");
     even=even+2;
