@@ -12,3 +12,38 @@ Console.Write ($"The  second figure of number is: {result} ");
 Console.WriteLine();
 
 */
+
+//Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+Console.Write("Input any number:  ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int result;
+
+while (num<0)
+{
+    num=num*(-1);
+}
+    if (num%1000<=1)
+    {
+        Console.Write ("The number have not third figure.");
+    } 
+    else
+    {
+        while(num/1000>=1)
+        {
+            num=num/10;
+        }    
+        
+        result=num%10;
+                
+        Console.Write($"The  third figure of number is: {result}");
+        Console.WriteLine();
+    }
+
+
+
+
+
+
+
