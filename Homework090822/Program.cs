@@ -13,6 +13,7 @@ Console.WriteLine();
 
 */
 
+/*
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
 Console.Write("Input any number:  ");
@@ -24,9 +25,10 @@ while (num<0)
 {
     num=num*(-1);
 }
-    if (num%1000<=1)
+    if (num/1000<=1)
     {
         Console.Write ("The number have not third figure.");
+        Console.WriteLine();
     } 
     else
     {
@@ -40,6 +42,32 @@ while (num<0)
         Console.Write($"The  third figure of number is: {result}");
         Console.WriteLine();
     }
+
+*/
+
+//Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+Console.Write("Input number which respond day of week:  ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num<=7)
+{
+    if (num>1 && num<=5)
+    {
+     Console.Write ("Is this day  weekend:NO.");
+     Console.WriteLine();    
+    }
+    else
+    {
+    Console.Write ("Is this day  weekend:Yes.");
+    Console.WriteLine();    
+    }
+}
+else
+{
+Console.Write ("Error!!!");
+Console.WriteLine();    
+}
 
 
 
