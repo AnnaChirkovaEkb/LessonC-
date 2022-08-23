@@ -155,7 +155,7 @@ int FindBetwenMaxMin(int [] array)
     {
         if(array[i]<=minnumber) minnumber=array[i];     
         if(array[i]>=maxnumber) maxnumber=array[i];
-        else i ++;
+        
     result=maxnumber-minnumber;
     }
 
